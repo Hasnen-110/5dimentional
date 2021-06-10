@@ -1,0 +1,96 @@
+@import './color.scss';
+
+.signin-container {
+    background: $background_color;
+    height: 100vh;
+    width: 100vw;
+
+    .logo-row {
+        padding: 50px;
+    }
+
+    .form-row {
+        width: 100% ;
+        // height: 100%;
+        left: 0px;
+
+        background: #FFFFFF;
+        border-radius: 37px 0px 0px 0px;
+        padding: 35px;
+
+        .form-header {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 47px;
+
+            color: $background_color;
+        }
+
+        .form-sub-header {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 68px;
+        }
+
+        .form-container {
+            width: 370px;
+
+        }
+
+    }
+
+    .signin-meta {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 31px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .signup-arrow {
+        position: absolute;
+        left: 2.2%;
+        top: 5.34%;
+        font-size: 18px;
+        color: white;
+    }
+}
+
+.ant-col .ant-form-item-label {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #001B30;
+}
+
+.form-item {
+    
+    .ant-form-item-label {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #001B30;
+    }
+}
+
+.form-input {
+    border: 0px !important;
+    border-bottom: 1px solid #DBDBDB !important;
+}
+
+.form-btn {
+    width: 184px;
+    height: 50px !important;
+
+    background: #001B30 !important;
+    border-radius: 25px !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 20px !important;
+    color: #FFFFFF !important;
+}
