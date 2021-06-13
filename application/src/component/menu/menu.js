@@ -30,7 +30,7 @@ const DMenu = (props) => {
             <Menu.Item key={'/profile'}  disabled >Profile</Menu.Item>
             <Menu.SubMenu key={currentMenuKey("/moment")} title="Moments">
                 <Menu.Item key={currentMenuKey("/moment/list")}><Link to={"/moment/list"}>Moment List</Link></Menu.Item>
-                <Menu.Item key={currentMenuKey("/moment/add")}><Link tp={"/moment/add"} >Add new moment</Link></Menu.Item>
+                <Menu.Item key={currentMenuKey("/moment/add")}><Link to={"/moment/add"} >Add new moment</Link></Menu.Item>
             </Menu.SubMenu>
         </Menu>
     );

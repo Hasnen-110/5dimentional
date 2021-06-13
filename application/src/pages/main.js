@@ -14,8 +14,11 @@ import '../css/main.scss';
 
 import Signin        from './signin/signin';
 import Moments from './moment/moments';
+import MomentAdd from './moment/moment.add';
 
 const { Content, Sider } = Layout;
+
+var form = undefined;
 
 const Main = (props) => {
     
@@ -43,6 +46,7 @@ const Main = (props) => {
                         </Route>
 
                         <PrivateRoute path="/moment/list" exact component={Moments} />
+                        <PrivateRoute path="/moment/add" exact component={MomentAdd} />
 
                         <Route exact path={["/signin", "/signup"]}> <Signin /> </Route>
 

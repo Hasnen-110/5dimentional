@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true, parameterLimit:50
 app.use(bodyParser.json({limit: "50mb"}));
 app.use(json({ limit: '50mb' }))
 
+app.use(Express.static(__dirname+"/business/images"));
+
 app.use(cors({ allowedHeaders: ['Authorization', 'Content-Type', 'x-authorization'] }));
 
 Db();

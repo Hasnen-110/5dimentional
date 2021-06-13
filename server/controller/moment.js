@@ -2,7 +2,7 @@ import Moment from "../business/moment";
 
 export async function getMoments(req, res) {
     try {
-        var {body: {userid}, isAuthorized} = req;
+        var {params: {userid}, isAuthorized} = req;
         if (!isAuthorized) res.status(200).send({status: 404, message: 'token expired'});
         var response = await new Moment({userid}).getMoments();
         res.status(200).send({

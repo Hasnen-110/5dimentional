@@ -15,6 +15,12 @@ export default class Session {
         return {...profile, isLoading: false}
     }
 
+    getToken = () => {
+        let data = sessionStorage.getItem(STORAGE.PROFILE);
+        let profile = JSON.parse(data);
+        return profile?.token;
+    }
+
     remove = (storage) => {
         sessionStorage.removeItem(storage);
     }

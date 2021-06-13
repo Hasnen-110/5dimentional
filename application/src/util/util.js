@@ -13,6 +13,12 @@ class Util {
             console.log("decode error", err.message);
         }
     }
+
+    getBase64 = (img, callback) => {
+        const reader = new FileReader();
+        reader.addEventListener('load', () => callback(reader.result));
+        reader.readAsDataURL(img);
+    }
 }
 
 export default new Util()

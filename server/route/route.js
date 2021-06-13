@@ -1,15 +1,18 @@
 const { signin, signup } = require("../controller/user");
 import jwt from 'jsonwebtoken';
 import { secret } from '../config/config';
+import { addMoment, getMoments } from '../controller/moment';
 
 function health(req, res) {
     res.send("Up and Working!");
 }
 
 const ROUTES = [
-    {method: 'get',     route: '/health',   action: health},
-    {method: 'post',    route: '/signin',   action: signin},
-    {method: 'post',    route: '/signup',   action: signup},
+    {method: 'get',     route: '/health',               action: health},
+    {method: 'post',    route: '/signin',               action: signin},
+    {method: 'post',    route: '/signup',               action: signup},
+    {method: 'get',     route: '/moments/:userid',      action: getMoments},
+    {method: 'post',    route: '/moments',              action: addMoment},
 ]
 
 class RouteHandler {

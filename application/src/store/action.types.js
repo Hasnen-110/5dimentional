@@ -6,6 +6,8 @@ const  ActionType = {
     LOGIN_SUCCESS: 'LOGIN_SUCCESS',
     RESET_SUCCESS: 'RESET_SUCCESS',
     LOGOUT: 'LOGOUT',
+
+    SET_MOMENTS: 'SET MOMENTS',
 };
 
 export default ActionType;

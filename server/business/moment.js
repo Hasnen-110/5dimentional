@@ -44,6 +44,7 @@ class Moment {
     }
 
     async _saveImage() {
+        console.log(this.moment.base64)
         var matches = this.moment.base64.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/),
             response = {};
         if (matches.length !== 3) {
